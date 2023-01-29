@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Oregano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #002733;
+    z-index: 100;
+}
+.hero-section{
+  margin: 5rem;
+  display: flex;
+}
+.hero-image img{
+  border-radius: 0.5rem;
+  filter: grayscale();
+  object-fit: cover;
+  width: 90%;
+  height: 80%;
+}
+.hero-section> .text{
+  width: 50%;
+  color: #fff;
+
+}
+.hero-section> .text p{
+  font-family: 'poppins';
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.hero-section> .text h2{
+  font-family: 'Oregano';
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+
+}
+.hero-section> .text h2 span{
+  font-size: 5.5rem;
+}
+.hero-section> .text>button{
+  background-color: tomato;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'poppins';
+}
+.offer{
+  margin: 3rem 0;
+  display: flex;
+  background-color: #022F3D;
+  padding: 0.5rem;
+max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10rem 10rem 0;
+}
+.offer-text{
+  margin-left: 3rem;
+  color: #fff;
+}
+.offer-img img{
+margin: 0 1rem;
+ width: 20%;
+}
+.offer>.offer-text>h1{
+font-family: 'oregano';
+font-size: 3rem;
+}
+.offer>.offer-text>h6{
+  font-size: 1.5rem;
+  font-family: 'poppins';
+}
+.dishes-section{
+  margin: 5rem 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dishes-section img{
+  object-fit: cover;
+
+  min-width: 40%;
+  height: auto;
+}
+.dishes-section>h1{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+font-family: 'oregano';
+color: #fff;
+}
+.gallery{
+  margin: 5rem 1rem;
+}
+.gallery>.gallery-grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery>.heading{
+  font-family: 'oregano';
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem;
+  padding: 0;
+}
+.image-grid {
+	--gap: 16px;
+	--num-cols: 4;
+	--row-height: 200px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+.booking{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 5rem;
+}
+.booking>.maps{
+  align-items: right;
+margin: 0 5rem;
+width: 50%;
+}
+.booking>.maps> iframe{
+  width: 80%;
+  height: 20rem;
+}
+.contact-form{
+  display: block;
+  font-family: 'oregano';
+  color: #fff;
+  font-size: 1.5rem;
+}
+.query-section{
+  background-color: #022F3D;
+  color: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  min-height: 15rem;
+  width: 80%;
+}
+.contact-form>button{
+  justify-content: center;
+background-color: tomato;
+border: none;
+outline: none;
+font-size: 1.5rem;
+font-family: 'oregano';
+padding: 0.2rem 0.5rem;
+border-radius: 0.5rem;
+}
+ footer{
+ 
+  font-family: 'poppins';
+  color: #fff;
+  margin: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .logo{
+  font-family: 'Caramel';
+  font-size: 2rem;
+ }
+ .logo span{
+  color: tomato;
+ }
+ .footer-colum2{
+  text-align: center;
+
+ }
+
+ .footer-colum2>.social-icon i{
+  margin:1rem 0.5rem;
+ }
+ @media(max-width:990px){
+ 
+
+  .hero-section{
+    display: block;
+    margin: 1rem;
+  text-align: center;
+  }
+  .hero-section>.text{
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .hero-section> .text p{
+    font-size: 0.9rem;
+  }
+  .hero-section> .text h2{
+    font-size: 2.4rem;
+  }
+  .hero-section> .text h2 span{
+    font-size: 3.5rem;
+  }
+  .offer img{
+    width: 40%;
+  }
+  .offer>.offer-text h1{
+    font-size:2rem;
+  }
+  .offer>.offer-text h6{
+    font-size: 1rem;
+  }
+  .dishes-section>h1{
+    font-size: 2.5rem;
+  }
+  .dishes-section img{
+width: 80%;
+  }
+  .image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+
+  .booking{
+    margin: 0.5rem;
+    display: block;
+    text-align: center;
+  }
+  .booking>.maps> iframe{
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    height:20rem;
+    }
+  .contact-form{
+    font-size: 1rem;
+  }
+  .gallery{
+    display: grid;
+  }
+
+  footer{text-align: center;
+    display: block;
+  }
+  .footer>.social-icon i{
+    margin-right: 0.5rem;
+  }
+ }
